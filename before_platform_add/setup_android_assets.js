@@ -24,7 +24,7 @@ catch( e ) {
     [ "", "-hdpi", "-ldpi", "-mdpi", "-xhdpi" ].forEach( function( item ) {
         shell.mkdir( "-p", screenroot + "/drawable" + item );
         shell.exec( "cp " + screenroot + "/*" + item + "-p*.png " + screenroot + "/drawable" + item + "/splash.png", {silent:true} );
-        shell.exec( "cp " + screenroot + "/*" + item + "-l*.png " + screenroot + "/drawable" + item + "/splash-landscape.png", {silent:true} );
+        shell.exec( "cp " + screenroot + "/*" + item + "-l*.png " + screenroot + "/drawable" + item + "/splash_landscape.png", {silent:true} );
     });
     shell.rm( screenroot + "/*.png" );
 
